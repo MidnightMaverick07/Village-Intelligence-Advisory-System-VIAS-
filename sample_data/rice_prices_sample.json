@@ -1,0 +1,274 @@
+{
+    "metadata": {
+        "crop": "Paddy (Rice)",
+        "variety": "Common",
+        "unit": "INR per Quintal",
+        "msp_2024_25": 2183,
+        "grade_a_msp": 2203,
+        "state": "West Bengal",
+        "generated_at": "2025-12-09T10:00:00+05:30"
+    },
+    "markets": [
+        {
+            "id": "bardhaman",
+            "name": "Bardhaman",
+            "name_bn": "বর্ধমান",
+            "district": "Purba Bardhaman",
+            "distance_from_bhatar_km": 25
+        },
+        {
+            "id": "memari",
+            "name": "Memari",
+            "name_bn": "মেমারি",
+            "district": "Purba Bardhaman",
+            "distance_from_bhatar_km": 18
+        },
+        {
+            "id": "katwa",
+            "name": "Katwa",
+            "name_bn": "কাটোয়া",
+            "district": "Purba Bardhaman",
+            "distance_from_bhatar_km": 32
+        },
+        {
+            "id": "galsi",
+            "name": "Galsi",
+            "name_bn": "গালসী",
+            "district": "Purba Bardhaman",
+            "distance_from_bhatar_km": 15
+        },
+        {
+            "id": "ausgram",
+            "name": "Ausgram",
+            "name_bn": "আউশগ্রাম",
+            "district": "Purba Bardhaman",
+            "distance_from_bhatar_km": 22
+        }
+    ],
+    "daily_prices": [
+        {
+            "date": "2025-12-03",
+            "prices": {
+                "bardhaman": {
+                    "modal": 2310,
+                    "min": 2250,
+                    "max": 2380
+                },
+                "memari": {
+                    "modal": 2285,
+                    "min": 2220,
+                    "max": 2350
+                },
+                "katwa": {
+                    "modal": 2340,
+                    "min": 2280,
+                    "max": 2420
+                },
+                "galsi": {
+                    "modal": 2275,
+                    "min": 2210,
+                    "max": 2340
+                },
+                "ausgram": {
+                    "modal": 2260,
+                    "min": 2190,
+                    "max": 2320
+                }
+            }
+        },
+        {
+            "date": "2025-12-04",
+            "prices": {
+                "bardhaman": {
+                    "modal": 2325,
+                    "min": 2260,
+                    "max": 2395
+                },
+                "memari": {
+                    "modal": 2290,
+                    "min": 2225,
+                    "max": 2360
+                },
+                "katwa": {
+                    "modal": 2355,
+                    "min": 2290,
+                    "max": 2430
+                },
+                "galsi": {
+                    "modal": 2280,
+                    "min": 2215,
+                    "max": 2345
+                },
+                "ausgram": {
+                    "modal": 2270,
+                    "min": 2200,
+                    "max": 2335
+                }
+            }
+        },
+        {
+            "date": "2025-12-05",
+            "prices": {
+                "bardhaman": {
+                    "modal": 2340,
+                    "min": 2275,
+                    "max": 2410
+                },
+                "memari": {
+                    "modal": 2305,
+                    "min": 2240,
+                    "max": 2375
+                },
+                "katwa": {
+                    "modal": 2365,
+                    "min": 2300,
+                    "max": 2445
+                },
+                "galsi": {
+                    "modal": 2290,
+                    "min": 2225,
+                    "max": 2360
+                },
+                "ausgram": {
+                    "modal": 2255,
+                    "min": 2185,
+                    "max": 2320
+                }
+            }
+        },
+        {
+            "date": "2025-12-06",
+            "prices": {
+                "bardhaman": {
+                    "modal": 2355,
+                    "min": 2290,
+                    "max": 2425
+                },
+                "memari": {
+                    "modal": 2310,
+                    "min": 2245,
+                    "max": 2380
+                },
+                "katwa": {
+                    "modal": 2380,
+                    "min": 2315,
+                    "max": 2460
+                },
+                "galsi": {
+                    "modal": 2295,
+                    "min": 2230,
+                    "max": 2365
+                },
+                "ausgram": {
+                    "modal": 2240,
+                    "min": 2170,
+                    "max": 2305
+                }
+            }
+        },
+        {
+            "date": "2025-12-07",
+            "prices": {
+                "bardhaman": {
+                    "modal": 2360,
+                    "min": 2295,
+                    "max": 2430
+                },
+                "memari": {
+                    "modal": 2320,
+                    "min": 2255,
+                    "max": 2390
+                },
+                "katwa": {
+                    "modal": 2390,
+                    "min": 2325,
+                    "max": 2470
+                },
+                "galsi": {
+                    "modal": 2305,
+                    "min": 2240,
+                    "max": 2375
+                },
+                "ausgram": {
+                    "modal": 2250,
+                    "min": 2180,
+                    "max": 2315
+                }
+            }
+        },
+        {
+            "date": "2025-12-08",
+            "prices": {
+                "bardhaman": {
+                    "modal": 2365,
+                    "min": 2300,
+                    "max": 2435
+                },
+                "memari": {
+                    "modal": 2315,
+                    "min": 2250,
+                    "max": 2385
+                },
+                "katwa": {
+                    "modal": 2395,
+                    "min": 2330,
+                    "max": 2475
+                },
+                "galsi": {
+                    "modal": 2300,
+                    "min": 2235,
+                    "max": 2370
+                },
+                "ausgram": {
+                    "modal": 2245,
+                    "min": 2175,
+                    "max": 2310
+                }
+            }
+        },
+        {
+            "date": "2025-12-09",
+            "prices": {
+                "bardhaman": {
+                    "modal": 2375,
+                    "min": 2310,
+                    "max": 2445
+                },
+                "memari": {
+                    "modal": 2330,
+                    "min": 2265,
+                    "max": 2400
+                },
+                "katwa": {
+                    "modal": 2405,
+                    "min": 2340,
+                    "max": 2485
+                },
+                "galsi": {
+                    "modal": 2310,
+                    "min": 2245,
+                    "max": 2380
+                },
+                "ausgram": {
+                    "modal": 2260,
+                    "min": 2190,
+                    "max": 2325
+                }
+            }
+        }
+    ],
+    "price_trends": {
+        "best_market_today": "katwa",
+        "best_price_today": 2405,
+        "worst_market_today": "ausgram",
+        "worst_price_today": 2260,
+        "7_day_avg": 2318,
+        "trend": "up",
+        "change_from_last_week": 65
+    },
+    "recommendations": {
+        "sell_now": false,
+        "reason": "Prices trending upward. Consider waiting 2-3 days.",
+        "best_time_to_sell": "After Dec 12 (post-rain, demand expected to rise)"
+    }
+}

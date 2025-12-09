@@ -1,0 +1,359 @@
+{
+    "metadata": {
+        "description": "Test cases for VIAS Rule Engine (utils/riskEngine.ts)",
+        "version": "1.0.0",
+        "total_testcases": 10,
+        "generated_at": "2025-12-09T10:00:00+05:30"
+    },
+    "testcases": [
+        {
+            "id": "TC001",
+            "name": "High Blast Risk - Ideal Conditions",
+            "description": "Tests blast disease detection under classic favorable conditions",
+            "input": {
+                "weather": {
+                    "temp_avg": 25,
+                    "temp_min": 22,
+                    "temp_max": 28,
+                    "humidity_avg": 92,
+                    "rainfall_mm": 15,
+                    "forecast_days_rain": 4,
+                    "wind_speed_kmh": 5
+                },
+                "crop": {
+                    "stage": "Tillering",
+                    "sowing_date": "2025-10-01",
+                    "variety": "Medium",
+                    "soil_type": "Clay"
+                }
+            },
+            "expected_output": {
+                "primary_risk_type": "Blast",
+                "risk_level": "CRITICAL",
+                "severity_min": 70,
+                "severity_max": 100,
+                "should_contain_recommendation": [
+                    "Tricyclazole",
+                    "fungicide",
+                    "drainage"
+                ]
+            }
+        },
+        {
+            "id": "TC002",
+            "name": "Drought Stress - No Rain, High Temp",
+            "description": "Tests drought detection during extended dry spell",
+            "input": {
+                "weather": {
+                    "temp_avg": 36,
+                    "temp_min": 28,
+                    "temp_max": 42,
+                    "humidity_avg": 35,
+                    "rainfall_mm": 0,
+                    "forecast_days_rain": 0,
+                    "wind_speed_kmh": 20
+                },
+                "crop": {
+                    "stage": "Flowering",
+                    "sowing_date": "2025-06-15",
+                    "variety": "Long",
+                    "soil_type": "Sandy"
+                }
+            },
+            "expected_output": {
+                "primary_risk_type": "Drought",
+                "risk_level": "HIGH",
+                "severity_min": 60,
+                "severity_max": 90,
+                "should_contain_recommendation": [
+                    "irrigation",
+                    "mulch",
+                    "water"
+                ]
+            }
+        },
+        {
+            "id": "TC003",
+            "name": "Flood Risk - Heavy Rainfall",
+            "description": "Tests flood risk detection with extreme rainfall forecast",
+            "input": {
+                "weather": {
+                    "temp_avg": 27,
+                    "temp_min": 24,
+                    "temp_max": 30,
+                    "humidity_avg": 95,
+                    "rainfall_mm": 120,
+                    "forecast_days_rain": 5,
+                    "wind_speed_kmh": 35
+                },
+                "crop": {
+                    "stage": "Seedling",
+                    "sowing_date": "2025-11-15",
+                    "variety": "Short",
+                    "soil_type": "Clay"
+                }
+            },
+            "expected_output": {
+                "primary_risk_type": "Flood",
+                "risk_level": "CRITICAL",
+                "severity_min": 80,
+                "severity_max": 100,
+                "should_contain_recommendation": [
+                    "drainage",
+                    "bund",
+                    "pump"
+                ]
+            }
+        },
+        {
+            "id": "TC004",
+            "name": "BPH Outbreak Conditions",
+            "description": "Tests Brown Planthopper detection with warm, humid nights",
+            "input": {
+                "weather": {
+                    "temp_avg": 30,
+                    "temp_min": 26,
+                    "temp_max": 34,
+                    "humidity_avg": 85,
+                    "rainfall_mm": 5,
+                    "forecast_days_rain": 2,
+                    "wind_speed_kmh": 3
+                },
+                "crop": {
+                    "stage": "Booting",
+                    "sowing_date": "2025-08-01",
+                    "variety": "Medium",
+                    "soil_type": "Clay"
+                }
+            },
+            "expected_output": {
+                "primary_risk_type": "BPH",
+                "risk_level": "HIGH",
+                "severity_min": 50,
+                "severity_max": 85,
+                "should_contain_recommendation": [
+                    "light trap",
+                    "imidacloprid",
+                    "drain"
+                ]
+            }
+        },
+        {
+            "id": "TC005",
+            "name": "Cold Stress - Winter Night",
+            "description": "Tests cold stress during flowering with low night temps",
+            "input": {
+                "weather": {
+                    "temp_avg": 18,
+                    "temp_min": 12,
+                    "temp_max": 24,
+                    "humidity_avg": 70,
+                    "rainfall_mm": 0,
+                    "forecast_days_rain": 0,
+                    "wind_speed_kmh": 8
+                },
+                "crop": {
+                    "stage": "Flowering",
+                    "sowing_date": "2025-09-15",
+                    "variety": "Long",
+                    "soil_type": "Loam"
+                }
+            },
+            "expected_output": {
+                "primary_risk_type": "Cold Stress",
+                "risk_level": "HIGH",
+                "severity_min": 55,
+                "severity_max": 80,
+                "should_contain_recommendation": [
+                    "night irrigation",
+                    "smoke",
+                    "cover"
+                ]
+            }
+        },
+        {
+            "id": "TC006",
+            "name": "Heat Stress - Extreme Summer",
+            "description": "Tests heat stress during grain filling with high temps",
+            "input": {
+                "weather": {
+                    "temp_avg": 38,
+                    "temp_min": 30,
+                    "temp_max": 44,
+                    "humidity_avg": 45,
+                    "rainfall_mm": 0,
+                    "forecast_days_rain": 0,
+                    "wind_speed_kmh": 15
+                },
+                "crop": {
+                    "stage": "Grain Filling",
+                    "sowing_date": "2025-02-15",
+                    "variety": "Short",
+                    "soil_type": "Sandy"
+                }
+            },
+            "expected_output": {
+                "primary_risk_type": "Heat Stress",
+                "risk_level": "CRITICAL",
+                "severity_min": 70,
+                "severity_max": 95,
+                "should_contain_recommendation": [
+                    "irrigation",
+                    "shade",
+                    "afternoon"
+                ]
+            }
+        },
+        {
+            "id": "TC007",
+            "name": "Brown Spot - Nutrient Stress",
+            "description": "Tests brown spot risk with water stress conditions",
+            "input": {
+                "weather": {
+                    "temp_avg": 29,
+                    "temp_min": 24,
+                    "temp_max": 34,
+                    "humidity_avg": 75,
+                    "rainfall_mm": 2,
+                    "forecast_days_rain": 1,
+                    "wind_speed_kmh": 12
+                },
+                "crop": {
+                    "stage": "Tillering",
+                    "sowing_date": "2025-09-01",
+                    "variety": "Medium",
+                    "soil_type": "Sandy"
+                }
+            },
+            "expected_output": {
+                "primary_risk_type": "Brown Spot",
+                "risk_level": "MEDIUM",
+                "severity_min": 40,
+                "severity_max": 65,
+                "should_contain_recommendation": [
+                    "potash",
+                    "zinc",
+                    "balanced"
+                ]
+            }
+        },
+        {
+            "id": "TC008",
+            "name": "Stem Borer - Dry Tillering",
+            "description": "Tests stem borer risk during dry tillering phase",
+            "input": {
+                "weather": {
+                    "temp_avg": 33,
+                    "temp_min": 27,
+                    "temp_max": 39,
+                    "humidity_avg": 55,
+                    "rainfall_mm": 0,
+                    "forecast_days_rain": 0,
+                    "wind_speed_kmh": 18
+                },
+                "crop": {
+                    "stage": "Tillering",
+                    "sowing_date": "2025-07-20",
+                    "variety": "Long",
+                    "soil_type": "Loam"
+                }
+            },
+            "expected_output": {
+                "primary_risk_type": "Stem Borer",
+                "risk_level": "MEDIUM",
+                "severity_min": 35,
+                "severity_max": 60,
+                "should_contain_recommendation": [
+                    "carbofuran",
+                    "egg mass",
+                    "trichogramma"
+                ]
+            }
+        },
+        {
+            "id": "TC009",
+            "name": "Low Risk - Ideal Growing",
+            "description": "Tests normal conditions with minimal risk",
+            "input": {
+                "weather": {
+                    "temp_avg": 28,
+                    "temp_min": 23,
+                    "temp_max": 33,
+                    "humidity_avg": 72,
+                    "rainfall_mm": 8,
+                    "forecast_days_rain": 2,
+                    "wind_speed_kmh": 10
+                },
+                "crop": {
+                    "stage": "Grain Filling",
+                    "sowing_date": "2025-07-15",
+                    "variety": "Medium",
+                    "soil_type": "Clay"
+                }
+            },
+            "expected_output": {
+                "primary_risk_type": "None",
+                "risk_level": "LOW",
+                "severity_min": 0,
+                "severity_max": 25,
+                "should_contain_recommendation": [
+                    "continue",
+                    "monitor",
+                    "normal"
+                ]
+            }
+        },
+        {
+            "id": "TC010",
+            "name": "Multiple Risks - Monsoon Peak",
+            "description": "Tests multi-risk scenario with blast + flood potential",
+            "input": {
+                "weather": {
+                    "temp_avg": 26,
+                    "temp_min": 23,
+                    "temp_max": 29,
+                    "humidity_avg": 94,
+                    "rainfall_mm": 85,
+                    "forecast_days_rain": 5,
+                    "wind_speed_kmh": 28
+                },
+                "crop": {
+                    "stage": "Flowering",
+                    "sowing_date": "2025-06-20",
+                    "variety": "Long",
+                    "soil_type": "Clay"
+                }
+            },
+            "expected_output": {
+                "primary_risk_type": "Flood",
+                "secondary_risks": [
+                    "Blast",
+                    "Sheath Blight"
+                ],
+                "risk_level": "CRITICAL",
+                "severity_min": 75,
+                "severity_max": 100,
+                "overall_risk_score_min": 70,
+                "should_contain_recommendation": [
+                    "drainage",
+                    "fungicide",
+                    "emergency"
+                ]
+            }
+        }
+    ],
+    "crop_stage_reference": {
+        "Seedling": "0-21 days after sowing",
+        "Tillering": "22-45 days after sowing",
+        "Booting": "46-65 days after sowing",
+        "Flowering": "66-85 days after sowing (panicle emergence)",
+        "Grain Filling": "86-110 days after sowing",
+        "Maturity": "110+ days after sowing"
+    },
+    "risk_level_reference": {
+        "LOW": "0-25% severity, routine monitoring",
+        "MEDIUM": "26-50% severity, preventive action recommended",
+        "HIGH": "51-75% severity, immediate action required",
+        "CRITICAL": "76-100% severity, emergency intervention needed"
+    }
+}

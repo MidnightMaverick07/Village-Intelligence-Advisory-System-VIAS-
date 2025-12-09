@@ -1,0 +1,238 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 15, 23, 42;
+  --background-start-rgb: 248, 250, 252;
+  --background-end-rgb: 241, 245, 249;
+  --card-bg: 255, 255, 255;
+  --card-border: 226, 232, 240;
+  --text-primary: 15, 23, 42;
+  --text-secondary: 71, 85, 105;
+  --text-muted: 148, 163, 184;
+}
+
+.dark {
+  --foreground-rgb: 248, 250, 252;
+  --background-start-rgb: 15, 23, 42;
+  --background-end-rgb: 30, 41, 59;
+  --card-bg: 30, 41, 59;
+  --card-border: 51, 65, 85;
+  --text-primary: 248, 250, 252;
+  --text-secondary: 203, 213, 225;
+  --text-muted: 148, 163, 184;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom,
+      rgb(var(--background-start-rgb)),
+      rgb(var(--background-end-rgb)));
+  min-height: 100vh;
+}
+
+/* Dark mode overrides */
+.dark .bg-white {
+  background-color: rgb(var(--card-bg)) !important;
+}
+
+.dark .bg-slate-50 {
+  background-color: rgb(51, 65, 85) !important;
+}
+
+.dark .border-slate-100,
+.dark .border-slate-200 {
+  border-color: rgb(var(--card-border)) !important;
+}
+
+.dark .text-slate-800 {
+  color: rgb(var(--text-primary)) !important;
+}
+
+.dark .text-slate-700 {
+  color: rgb(var(--text-secondary)) !important;
+}
+
+.dark .text-slate-600 {
+  color: rgb(var(--text-secondary)) !important;
+}
+
+.dark .text-slate-500 {
+  color: rgb(var(--text-muted)) !important;
+}
+
+.dark .text-slate-400 {
+  color: rgb(var(--text-muted)) !important;
+}
+
+.dark .bg-gradient-to-b.from-slate-50.to-slate-100 {
+  background: linear-gradient(to bottom, rgb(15, 23, 42), rgb(30, 41, 59)) !important;
+}
+
+/* Dark mode for specific backgrounds */
+.dark .bg-green-50 {
+  background-color: rgba(34, 197, 94, 0.1) !important;
+}
+
+.dark .bg-red-50 {
+  background-color: rgba(239, 68, 68, 0.1) !important;
+}
+
+.dark .bg-yellow-50 {
+  background-color: rgba(234, 179, 8, 0.1) !important;
+}
+
+.dark .bg-blue-50 {
+  background-color: rgba(59, 130, 246, 0.1) !important;
+}
+
+.dark .bg-purple-50 {
+  background-color: rgba(168, 85, 247, 0.1) !important;
+}
+
+.dark .bg-orange-50 {
+  background-color: rgba(249, 115, 22, 0.1) !important;
+}
+
+.dark .bg-indigo-50 {
+  background-color: rgba(99, 102, 241, 0.1) !important;
+}
+
+/* Dark mode inputs */
+.dark input,
+.dark select,
+.dark textarea {
+  background-color: rgb(51, 65, 85) !important;
+  border-color: rgb(71, 85, 105) !important;
+  color: rgb(248, 250, 252) !important;
+}
+
+.dark input::placeholder {
+  color: rgb(148, 163, 184) !important;
+}
+
+/* Dark mode tables */
+.dark thead {
+  background-color: rgb(51, 65, 85) !important;
+}
+
+.dark th {
+  color: rgb(203, 213, 225) !important;
+}
+
+/* Dark mode skeleton */
+.dark .animate-pulse {
+  background-color: rgb(51, 65, 85) !important;
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  .bg-white {
+    background: white !important;
+    box-shadow: none !important;
+  }
+}
+
+/* High Contrast Mode */
+.high-contrast {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255;
+}
+
+.high-contrast body {
+  background: white !important;
+  color: black !important;
+}
+
+.high-contrast .bg-white,
+.high-contrast .bg-slate-50,
+.high-contrast .bg-slate-100 {
+  background-color: white !important;
+  border: 2px solid black !important;
+}
+
+.high-contrast .text-slate-500,
+.high-contrast .text-slate-400,
+.high-contrast .text-slate-600,
+.high-contrast .text-slate-700,
+.high-contrast .text-slate-800 {
+  color: black !important;
+}
+
+.high-contrast .bg-paddy-green,
+.high-contrast .bg-green-500,
+.high-contrast .bg-green-600 {
+  background-color: #006400 !important;
+}
+
+.high-contrast .text-paddy-green {
+  color: #006400 !important;
+}
+
+.high-contrast .bg-red-500,
+.high-contrast .bg-red-600 {
+  background-color: #8B0000 !important;
+}
+
+.high-contrast .bg-amber-500,
+.high-contrast .bg-yellow-500 {
+  background-color: #B8860B !important;
+}
+
+.high-contrast a,
+.high-contrast button {
+  text-decoration: underline !important;
+}
+
+.high-contrast .border-slate-100,
+.high-contrast .border-slate-200 {
+  border-color: black !important;
+}
+
+/* Reduce Motion */
+.reduce-motion *,
+.reduce-motion *::before,
+.reduce-motion *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+}
+
+.reduce-motion .animate-pulse,
+.reduce-motion .animate-spin,
+.reduce-motion .animate-bounce {
+  animation: none !important;
+}
+
+/* Respect system preference for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Focus styles for keyboard navigation */
+*:focus-visible {
+  outline: 3px solid #22c55e !important;
+  outline-offset: 2px !important;
+}
+
+.high-contrast *:focus-visible {
+  outline: 3px solid black !important;
+}

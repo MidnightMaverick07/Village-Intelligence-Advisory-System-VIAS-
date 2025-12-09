@@ -1,0 +1,118 @@
+{
+    "metadata": {
+        "village": "Bhatar",
+        "district": "Purba Bardhaman",
+        "state": "West Bengal",
+        "latitude": 23.42,
+        "longitude": 87.91,
+        "generated_at": "2025-12-09T10:00:00+05:30",
+        "source": "Open-Meteo API (simulated)"
+    },
+    "current": {
+        "temperature_2m": 28.5,
+        "relative_humidity_2m": 78,
+        "rain": 0,
+        "wind_speed_10m": 12.3,
+        "uv_index": 6
+    },
+    "daily_forecast": [
+        {
+            "date": "2025-12-09",
+            "day_of_week": "Tuesday",
+            "temp_max": 31.2,
+            "temp_min": 18.5,
+            "temp_avg": 24.8,
+            "humidity_avg": 75,
+            "rainfall_mm": 0,
+            "rain_probability": 10,
+            "uv_index_max": 7,
+            "wind_speed_max_kmh": 15,
+            "weather_condition": "Partly Cloudy"
+        },
+        {
+            "date": "2025-12-10",
+            "day_of_week": "Wednesday",
+            "temp_max": 30.8,
+            "temp_min": 17.2,
+            "temp_avg": 24.0,
+            "humidity_avg": 72,
+            "rainfall_mm": 0,
+            "rain_probability": 5,
+            "uv_index_max": 8,
+            "wind_speed_max_kmh": 12,
+            "weather_condition": "Sunny"
+        },
+        {
+            "date": "2025-12-11",
+            "day_of_week": "Thursday",
+            "temp_max": 29.5,
+            "temp_min": 19.8,
+            "temp_avg": 24.6,
+            "humidity_avg": 82,
+            "rainfall_mm": 5.2,
+            "rain_probability": 60,
+            "uv_index_max": 5,
+            "wind_speed_max_kmh": 18,
+            "weather_condition": "Light Rain"
+        },
+        {
+            "date": "2025-12-12",
+            "day_of_week": "Friday",
+            "temp_max": 27.3,
+            "temp_min": 20.1,
+            "temp_avg": 23.7,
+            "humidity_avg": 88,
+            "rainfall_mm": 25.8,
+            "rain_probability": 90,
+            "uv_index_max": 3,
+            "wind_speed_max_kmh": 22,
+            "weather_condition": "Heavy Rain"
+        },
+        {
+            "date": "2025-12-13",
+            "day_of_week": "Saturday",
+            "temp_max": 28.1,
+            "temp_min": 21.4,
+            "temp_avg": 24.7,
+            "humidity_avg": 85,
+            "rainfall_mm": 12.3,
+            "rain_probability": 70,
+            "uv_index_max": 4,
+            "wind_speed_max_kmh": 16,
+            "weather_condition": "Moderate Rain"
+        },
+        {
+            "date": "2025-12-14",
+            "day_of_week": "Sunday",
+            "temp_max": 30.2,
+            "temp_min": 19.6,
+            "temp_avg": 24.9,
+            "humidity_avg": 76,
+            "rainfall_mm": 2.1,
+            "rain_probability": 30,
+            "uv_index_max": 6,
+            "wind_speed_max_kmh": 14,
+            "weather_condition": "Mostly Cloudy"
+        },
+        {
+            "date": "2025-12-15",
+            "day_of_week": "Monday",
+            "temp_max": 31.5,
+            "temp_min": 18.3,
+            "temp_avg": 24.9,
+            "humidity_avg": 70,
+            "rainfall_mm": 0,
+            "rain_probability": 10,
+            "uv_index_max": 8,
+            "wind_speed_max_kmh": 10,
+            "weather_condition": "Sunny"
+        }
+    ],
+    "weekly_summary": {
+        "total_rainfall_mm": 45.4,
+        "avg_temperature": 24.5,
+        "rainy_days": 4,
+        "hottest_day": "2025-12-15",
+        "coldest_night": "2025-12-10"
+    }
+}

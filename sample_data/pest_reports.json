@@ -1,0 +1,306 @@
+{
+    "metadata": {
+        "village": "Bhatar",
+        "district": "Purba Bardhaman",
+        "reporting_period": "2025-11-01 to 2025-12-09",
+        "total_reports": 12,
+        "generated_at": "2025-12-09T10:00:00+05:30"
+    },
+    "pest_disease_reference": {
+        "Blast": {
+            "scientific_name": "Magnaporthe oryzae",
+            "type": "Fungal Disease",
+            "affected_parts": [
+                "Leaf",
+                "Neck",
+                "Node"
+            ],
+            "favorable_conditions": "High humidity (>85%), Temp 20-28°C, Cloudy weather"
+        },
+        "Brown Spot": {
+            "scientific_name": "Bipolaris oryzae",
+            "type": "Fungal Disease",
+            "affected_parts": [
+                "Leaf",
+                "Grain"
+            ],
+            "favorable_conditions": "Water stress, Nutrient deficiency, Humidity fluctuation"
+        },
+        "Sheath Blight": {
+            "scientific_name": "Rhizoctonia solani",
+            "type": "Fungal Disease",
+            "affected_parts": [
+                "Sheath",
+                "Leaf"
+            ],
+            "favorable_conditions": "Dense canopy, High humidity, High nitrogen"
+        },
+        "BPH": {
+            "scientific_name": "Nilaparvata lugens",
+            "type": "Insect Pest",
+            "affected_parts": [
+                "Stem base"
+            ],
+            "favorable_conditions": "Warm nights, Still air, Excessive nitrogen"
+        },
+        "Stem Borer": {
+            "scientific_name": "Scirpophaga incertulas",
+            "type": "Insect Pest",
+            "affected_parts": [
+                "Stem",
+                "Panicle"
+            ],
+            "favorable_conditions": "Hot dry spells, Tillering stage"
+        }
+    },
+    "reports": [
+        {
+            "id": "RPT001",
+            "farmer_id": "BHT001",
+            "farmer_name": "Ramesh Mondal",
+            "ward": 3,
+            "pest_disease": "Blast",
+            "severity": "HIGH",
+            "affected_area_pct": 35,
+            "symptoms_observed": "Diamond-shaped lesions on leaves with gray center",
+            "crop_stage": "Flowering",
+            "reported_date": "2025-11-15",
+            "verified_by": "Block Agricultural Officer",
+            "action_taken": "Tricyclazole spray recommended",
+            "status": "Under Treatment"
+        },
+        {
+            "id": "RPT002",
+            "farmer_id": "BHT004",
+            "farmer_name": "Lakshmi Devi",
+            "ward": 3,
+            "pest_disease": "Blast",
+            "severity": "MEDIUM",
+            "affected_area_pct": 20,
+            "symptoms_observed": "Small brown spots on leaves expanding",
+            "crop_stage": "Grain Filling",
+            "reported_date": "2025-11-18",
+            "verified_by": "Village Extension Worker",
+            "action_taken": "Preventive spray advised",
+            "status": "Resolved"
+        },
+        {
+            "id": "RPT003",
+            "farmer_id": "BHT002",
+            "farmer_name": "Sukumar Das",
+            "ward": 5,
+            "pest_disease": "Brown Spot",
+            "severity": "LOW",
+            "affected_area_pct": 10,
+            "symptoms_observed": "Oval brown lesions on lower leaves",
+            "crop_stage": "Maturity",
+            "reported_date": "2025-11-10",
+            "verified_by": "Village Extension Worker",
+            "action_taken": "Potash application recommended",
+            "status": "Resolved"
+        },
+        {
+            "id": "RPT004",
+            "farmer_id": "BHT005",
+            "farmer_name": "Goutam Pal",
+            "ward": 5,
+            "pest_disease": "BPH",
+            "severity": "HIGH",
+            "affected_area_pct": 40,
+            "symptoms_observed": "Hopper burn observed, plants drying in patches",
+            "crop_stage": "Flowering",
+            "reported_date": "2025-11-20",
+            "verified_by": "Block Agricultural Officer",
+            "action_taken": "Imidacloprid spray + drain water advised",
+            "status": "Under Treatment"
+        },
+        {
+            "id": "RPT005",
+            "farmer_id": "BHT009",
+            "farmer_name": "Kartik Majhi",
+            "ward": 5,
+            "pest_disease": "BPH",
+            "severity": "MEDIUM",
+            "affected_area_pct": 25,
+            "symptoms_observed": "Nymphs observed at stem base, yellowing starting",
+            "crop_stage": "Grain Filling",
+            "reported_date": "2025-11-22",
+            "verified_by": "Village Extension Worker",
+            "action_taken": "Light trap installation, spot spray",
+            "status": "Under Treatment"
+        },
+        {
+            "id": "RPT006",
+            "farmer_id": "BHT006",
+            "farmer_name": "Biswanath Roy",
+            "ward": 1,
+            "pest_disease": "Stem Borer",
+            "severity": "MEDIUM",
+            "affected_area_pct": 15,
+            "symptoms_observed": "Dead hearts observed in some tillers",
+            "crop_stage": "Tillering",
+            "reported_date": "2025-09-05",
+            "verified_by": "Block Agricultural Officer",
+            "action_taken": "Carbofuran granules applied",
+            "status": "Resolved"
+        },
+        {
+            "id": "RPT007",
+            "farmer_id": "BHT007",
+            "farmer_name": "Pradip Sen",
+            "ward": 2,
+            "pest_disease": "Sheath Blight",
+            "severity": "LOW",
+            "affected_area_pct": 8,
+            "symptoms_observed": "Lesions on leaf sheath near water line",
+            "crop_stage": "Booting",
+            "reported_date": "2025-10-15",
+            "verified_by": "Village Extension Worker",
+            "action_taken": "Reduce nitrogen, improve drainage",
+            "status": "Resolved"
+        },
+        {
+            "id": "RPT008",
+            "farmer_id": "BHT003",
+            "farmer_name": "Amit Ghosh",
+            "ward": 2,
+            "pest_disease": "Brown Spot",
+            "severity": "MEDIUM",
+            "affected_area_pct": 22,
+            "symptoms_observed": "Multiple lesions on leaves, some grain discoloration",
+            "crop_stage": "Maturity",
+            "reported_date": "2025-09-20",
+            "verified_by": "Block Agricultural Officer",
+            "action_taken": "Mancozeb spray applied",
+            "status": "Resolved"
+        },
+        {
+            "id": "RPT009",
+            "farmer_id": "BHT010",
+            "farmer_name": "Haripada Saha",
+            "ward": 1,
+            "pest_disease": "Blast",
+            "severity": "LOW",
+            "affected_area_pct": 5,
+            "symptoms_observed": "Few lesions on upper leaves",
+            "crop_stage": "Flowering",
+            "reported_date": "2025-10-01",
+            "verified_by": "Village Extension Worker",
+            "action_taken": "Preventive fungicide spray",
+            "status": "Resolved"
+        },
+        {
+            "id": "RPT010",
+            "farmer_id": "BHT008",
+            "farmer_name": "Shanti Mandal",
+            "ward": 4,
+            "pest_disease": "Stem Borer",
+            "severity": "HIGH",
+            "affected_area_pct": 30,
+            "symptoms_observed": "White heads at panicle stage",
+            "crop_stage": "Flowering",
+            "reported_date": "2025-11-25",
+            "verified_by": "Block Agricultural Officer",
+            "action_taken": "Chlorantraniliprole spray, remove affected tillers",
+            "status": "Under Treatment"
+        },
+        {
+            "id": "RPT011",
+            "farmer_id": "BHT004",
+            "farmer_name": "Lakshmi Devi",
+            "ward": 3,
+            "pest_disease": "Brown Spot",
+            "severity": "MEDIUM",
+            "affected_area_pct": 18,
+            "symptoms_observed": "Lesions expanding on nutrient-deficient plants",
+            "crop_stage": "Grain Filling",
+            "reported_date": "2025-11-28",
+            "verified_by": "Village Extension Worker",
+            "action_taken": "Foliar potash + zinc spray",
+            "status": "Under Treatment"
+        },
+        {
+            "id": "RPT012",
+            "farmer_id": "BHT009",
+            "farmer_name": "Kartik Majhi",
+            "ward": 5,
+            "pest_disease": "Sheath Blight",
+            "severity": "LOW",
+            "affected_area_pct": 12,
+            "symptoms_observed": "Lesions on lower sheaths",
+            "crop_stage": "Grain Filling",
+            "reported_date": "2025-12-01",
+            "verified_by": "Village Extension Worker",
+            "action_taken": "Validamycin spray recommended",
+            "status": "Pending Treatment"
+        }
+    ],
+    "summary_by_pest": {
+        "Blast": {
+            "total_reports": 3,
+            "high_severity": 1,
+            "medium_severity": 1,
+            "low_severity": 1,
+            "affected_wards": [
+                1,
+                3
+            ]
+        },
+        "Brown Spot": {
+            "total_reports": 3,
+            "high_severity": 0,
+            "medium_severity": 2,
+            "low_severity": 1,
+            "affected_wards": [
+                2,
+                3,
+                5
+            ]
+        },
+        "BPH": {
+            "total_reports": 2,
+            "high_severity": 1,
+            "medium_severity": 1,
+            "low_severity": 0,
+            "affected_wards": [
+                5
+            ]
+        },
+        "Stem Borer": {
+            "total_reports": 2,
+            "high_severity": 1,
+            "medium_severity": 1,
+            "low_severity": 0,
+            "affected_wards": [
+                1,
+                4
+            ]
+        },
+        "Sheath Blight": {
+            "total_reports": 2,
+            "high_severity": 0,
+            "medium_severity": 0,
+            "low_severity": 2,
+            "affected_wards": [
+                2,
+                5
+            ]
+        }
+    },
+    "hotspot_wards": [
+        {
+            "ward": 5,
+            "total_reports": 4,
+            "primary_pest": "BPH",
+            "risk_level": "HIGH",
+            "advisory": "Intensive monitoring required. Avoid excess nitrogen. Install light traps."
+        },
+        {
+            "ward": 3,
+            "total_reports": 3,
+            "primary_pest": "Blast",
+            "risk_level": "MEDIUM",
+            "advisory": "Preventive fungicide spray during cloudy weather. Ensure balanced fertilization."
+        }
+    ]
+}
