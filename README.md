@@ -15,7 +15,7 @@
 
 ---
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [Project Overview](#-project-overview)
 - [Problem Statement](#-problem-statement)
@@ -37,7 +37,7 @@
 
 ---
 
-## 🌟 Project Overview
+##  Project Overview
 
 **VIAS (Village Intelligence & Advisory System)** is a comprehensive Next.js-based agricultural advisory platform designed specifically for **smallholder paddy (rice) farmers** in **West Bengal, India**. The system provides real-time weather data, climate risk assessments, pest/disease alerts, and actionable advisories in both **English** and **Bengali (বাংলা)**.
 
@@ -50,7 +50,7 @@ The platform aggregates data from multiple sources including:
 
 ---
 
-## 🎯 Problem Statement
+##  Problem Statement
 
 ### Target Region: West Bengal, India
 
@@ -73,9 +73,9 @@ Small and marginal rice farmers in West Bengal face significant challenges:
 
 ---
 
-## ✨ Core Features
+##  Core Features
 
-### 🏘️ Village Rice Dashboard
+###  Village Rice Dashboard
 
 A comprehensive village-level overview providing:
 
@@ -87,7 +87,7 @@ A comprehensive village-level overview providing:
 - **Government Scheme Alerts** — Deadline reminders and eligibility checks
 - **Crop Calendar Integration** — Current activities and upcoming tasks
 
-### 🌡️ Field-Level Climate Risk Advisory
+###  Field-Level Climate Risk Advisory
 
 Interactive advisory tool that calculates personalized risk based on:
 
@@ -127,7 +127,7 @@ Interactive advisory tool that calculates personalized risk based on:
 
 ---
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
 | Layer | Technology |
 |-------|------------|
@@ -144,7 +144,7 @@ Interactive advisory tool that calculates personalized risk based on:
 
 ---
 
-## 🏗️ System Architecture
+##  System Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
@@ -192,7 +192,7 @@ Interactive advisory tool that calculates personalized risk based on:
 
 ---
 
-## 📁 Folder Structure
+##  Folder Structure
 
 ```
 MyBharat/
@@ -252,7 +252,7 @@ MyBharat/
 │   └── glossary.ts               # Agricultural terminology
 │
 ├── utils/                        # Utility Functions
-│   ├── riskEngine.ts             # 🔥 Core risk calculation logic
+│   ├── riskEngine.ts             # Core risk calculation logic
 │   └── pdfGenerator.ts           # Advisory PDF generation
 │
 ├── __tests__/                    # Test Suites
@@ -269,7 +269,7 @@ MyBharat/
 
 ---
 
-## 🚀 Setup Steps
+##  Setup Steps
 
 ### Prerequisites
 
@@ -319,7 +319,7 @@ npm run test:coverage
 
 ---
 
-## 🔐 Environment Variables
+##  Environment Variables
 
 This project currently uses **no API keys** for core functionality. The Open-Meteo weather API is free and keyless.
 
@@ -355,7 +355,7 @@ NEXT_PUBLIC_BASE_URL=http://localhost:3000
 
 ---
 
-## 📡 API Documentation
+##  API Documentation
 
 ### 1. Weather API
 
@@ -414,7 +414,7 @@ Aggregates agricultural news from RSS feeds.
 
 ---
 
-## 🧪 Sample Data & Test Instructions
+##  Sample Data & Test Instructions
 
 ### Pre-loaded Test Villages
 
@@ -503,7 +503,7 @@ npm run test:coverage
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
 > *Add screenshots after deploying the application*
 
@@ -529,7 +529,7 @@ npm run test:coverage
 
 ---
 
-## ⚠️ Limitations
+##  Limitations
 
 | Limitation | Description |
 |------------|-------------|
@@ -544,7 +544,7 @@ npm run test:coverage
 
 ---
 
-## 🗺️ Future Roadmap
+##  Future Roadmap
 
 ### Phase 1: Backend Integration (Q1 2025)
 
@@ -600,8 +600,9 @@ in the Software without restriction...
 
 ---
 
-**⭐ If you find this project helpful, please give it a star!**
+** If you find this project helpful, please give it a star!**
 
 *Made with ❤️ for the farmers of West Bengal*
 
 </div>
+
