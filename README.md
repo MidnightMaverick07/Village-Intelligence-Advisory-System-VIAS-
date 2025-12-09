@@ -454,7 +454,7 @@ Expected: LOW Risk (Green Status)
 
 ---
 
-## ⚙️ How to Run the Rule Engine
+##  How to Run the Rule Engine
 
 The risk engine is located at `utils/riskEngine.ts` and can be used programmatically:
 
@@ -605,4 +605,5 @@ in the Software without restriction...
 *Made with ❤️ for the farmers of West Bengal*
 
 </div>
+
 
