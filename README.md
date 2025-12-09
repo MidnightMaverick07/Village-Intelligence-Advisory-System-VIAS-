@@ -1,4 +1,4 @@
-<![CDATA[<div align="center">
+<div align="center">
 
 # 🌾 Village Intelligence & Advisory System (VIAS)
 
@@ -42,6 +42,7 @@
 **VIAS (Village Intelligence & Advisory System)** is a comprehensive Next.js-based agricultural advisory platform designed specifically for **smallholder paddy (rice) farmers** in **West Bengal, India**. The system provides real-time weather data, climate risk assessments, pest/disease alerts, and actionable advisories in both **English** and **Bengali (বাংলা)**.
 
 The platform aggregates data from multiple sources including:
+
 - **Open-Meteo API** for real-time weather forecasting
 - **Rule-based Risk Engine** for disease/pest prediction
 - **Local Mandi (Market) Rates** for price discovery
@@ -369,6 +370,7 @@ Fetches real-time weather data from Open-Meteo.
 | `village` | string | `Bhatar` | Village name for display |
 
 **Response:**
+
 ```json
 {
   "current": {
@@ -378,11 +380,11 @@ Fetches real-time weather data from Open-Meteo.
     "windSpeed": 12.3
   },
   "daily": {
-    "time": ["2024-07-15", "2024-07-16", ...],
-    "tempMax": [32, 31, ...],
-    "tempMin": [24, 25, ...],
-    "rainSum": [0, 15, ...],
-    "uvIndex": [8, 7, ...]
+    "time": ["2024-07-15", "2024-07-16"],
+    "tempMax": [32, 31],
+    "tempMin": [24, 25],
+    "rainSum": [0, 15],
+    "uvIndex": [8, 7]
   },
   "location": {
     "lat": 23.42,
@@ -427,6 +429,7 @@ Aggregates agricultural news from RSS feeds.
 ### Test Scenarios
 
 #### Scenario 1: High Blast Risk
+
 ```
 Sowing Date: 45 days ago
 Weather: Temp 25°C, Humidity 90%, Rain 20mm
@@ -434,6 +437,7 @@ Expected: CRITICAL Blast Risk Alert
 ```
 
 #### Scenario 2: Drought Stress
+
 ```
 Sowing Date: 70 days ago
 Weather: Temp 38°C, Humidity 40%, Rain 0mm (10 days)
@@ -441,6 +445,7 @@ Expected: HIGH Drought Risk Alert
 ```
 
 #### Scenario 3: Normal Conditions
+
 ```
 Sowing Date: 30 days ago
 Weather: Temp 30°C, Humidity 70%, Rain 5mm
@@ -503,24 +508,24 @@ npm run test:coverage
 > *Add screenshots after deploying the application*
 
 ### Landing Page
+
 ![Landing Page](./screenshots/landing.png)
-<!-- Placeholder: Add actual screenshot -->
 
 ### Village Dashboard
+
 ![Dashboard](./screenshots/dashboard.png)
-<!-- Placeholder: Add actual screenshot -->
 
 ### Field Advisory
+
 ![Advisory](./screenshots/advisory.png)
-<!-- Placeholder: Add actual screenshot -->
 
 ### Risk Alert
+
 ![Risk Alert](./screenshots/risk-alert.png)
-<!-- Placeholder: Add actual screenshot -->
 
 ### Mobile View
+
 ![Mobile](./screenshots/mobile.png)
-<!-- Placeholder: Add actual screenshot -->
 
 ---
 
@@ -542,21 +547,25 @@ npm run test:coverage
 ## 🗺️ Future Roadmap
 
 ### Phase 1: Backend Integration (Q1 2025)
+
 - [ ] PostgreSQL/MongoDB database for farmer persistence
 - [ ] Aadhaar-based farmer authentication
 - [ ] REST API with Express.js or tRPC
 
 ### Phase 2: AI/ML Features (Q2 2025)
+
 - [ ] Image-based pest/disease detection using TensorFlow.js
 - [ ] Yield prediction model based on historical data
 - [ ] Satellite imagery integration (NDVI analysis)
 
 ### Phase 3: Communication (Q3 2025)
+
 - [ ] SMS alerts via Twilio/MSG91
 - [ ] WhatsApp Business API integration
 - [ ] Voice advisory in Bengali using Bhashini API
 
 ### Phase 4: Scale & Localization (Q4 2025)
+
 - [ ] Expand to Odisha, Bihar, Jharkhand
 - [ ] PWA with offline support
 - [ ] Multi-crop support (wheat, jute, vegetables)
@@ -596,4 +605,3 @@ in the Software without restriction...
 *Made with ❤️ for the farmers of West Bengal*
 
 </div>
-]]>
