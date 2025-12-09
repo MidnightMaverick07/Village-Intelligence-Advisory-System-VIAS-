@@ -505,23 +505,31 @@ npm run test:coverage
 
 ##  Screenshots
 
-> *Add screenshots after deploying the application*
+
 
 ### Landing Page
 
-![Landing Page](./screenshots/landing.png)
+![Landing Page]([./screenshots/landing.png](https://github.com/user-attachments/assets/b6dab7de-beed-44fe-a7c6-32d1aed6373))
 
 ### Village Dashboard
 
-![Dashboard](./screenshots/dashboard.png)
+![Dashboard]([./screenshots/dashboard.png](https://github.com/user-attachments/assets/932940cf-cf92-4c40-a83a-48f159d2a23f))
 
 ### Field Advisory
 
-![Advisory](./screenshots/advisory.png)
+![Advisory]([./screenshots/advisory.png](https://github.com/user-attachments/assets/5a15c80a-eb16-4dd1-81c0-ff6cb38ae226))
 
 ### Risk Alert
 
 ![Risk Alert](./screenshots/risk-alert.png)
+
+### Advisory
+
+![Advisory]([./screenshots/risk-alert.png](https://github.com/user-attachments/assets/d17a6774-d609-4fe4-8a85-ba0687ed0f76))
+
+### Government Schemes
+
+![Govt Schemes](./screenshots/risk-alert.png)
 
 ### Mobile View
 
@@ -605,5 +613,6 @@ in the Software without restriction...
 *Made with ❤️ for the farmers of West Bengal*
 
 </div>
+
 
 
